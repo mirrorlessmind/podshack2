@@ -1,0 +1,13 @@
+{{#each podcasts as |podcast| }}
+<div class="container">
+    <div>
+    <a href="{{podcast.link}}">
+       <img src="{{podcast.thumbnail}}" alt="thumbnail link">
+       </a>
+       </div>
+    <p>
+        {{podcast.title}}
+        {{podcast.description}}
+    </p>
+</div>
+{{/each}}

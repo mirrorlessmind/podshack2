@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+  <title>PodShack</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A fun way to curate podcasts">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon-precomposed" href="media/favicon.png">
+  <link rel="icon" href="media/favicon.png">
+  <link rel="mask-icon" href="media/favicon.svg" color="rgb(36,38,58)">
+  <link rel="shortcut icon" href="media/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page page-home preload">
+
+  <header class="header-main dark">
+    <nav> <span>Pod Shack</span></a>
+      <div class="nav-toggle"></div>
+      <ul class="inline">
+        <li><a href="#" class="active">Home</a></li>
+
+      </ul>
+      <ul class="inline right">
+        <li><a href="login" class="button button-primary button-m full-width-tablet" role="button">Log In</a> </li>
+        <li><a href="signup" class="button button-primary button-m full-width-tablet" role="button">Sign Up</a></li>
+        <li><a href="signup" class="button button-primary button-m full-width-tablet" role="button">Google LogIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro-hero-block text-center">
+              <img class="img-responsive hero-img wow bounceIn animated" src="media/content/hero-illustration.png" alt = "Hero Illustration"> 
+        </div>
+      </div>
+    </div>
+    {{#if logged_in}}
+    <a href="profile">profile</a> |
+    <button class="no-button" id="logout">logout</button>
+    {{else}}
+
+    {{/if}}
+    </nav>
+    </header>
+    <main class="container container-fluid mt-5">
+      {{{ body }}}
+    </main>
+    </div>
+
+    {{#if logged_in}}
+    <script src="public/js/logout.js"></script>
+    {{/if}}
+
+</body>
+
+</html>
